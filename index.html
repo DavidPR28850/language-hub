@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#111827" />
+    <meta name="description" content="Tu acceso directo a idiomas, recursos y materiales." />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.svg" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Language Hub</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <button class="brand" id="homeButton" aria-label="Volver al inicio"><span>✦</span> Language Hub</button>
+        <button class="icon-button" id="installButton" hidden aria-label="Instalar aplicación">⇩</button>
+      </header>
+
+      <section id="homeView" class="view active" aria-labelledby="homeTitle">
+        <div class="hero">
+          <p class="eyebrow">TU ESPACIO DE IDIOMAS</p>
+          <h1 id="homeTitle">¿Qué idioma quieres explorar?</h1>
+          <p>Todo lo que usas, ordenado y a un toque de distancia.</p>
+        </div>
+        <div class="language-grid" aria-label="Idiomas y herramientas">
+          <button class="language-card english" data-language="english"><span class="flag"><img src="flags/gb.svg" alt="Bandera del Reino Unido" /></span><span><b>English</b><small>Goal — Maintain C1 level</small></span><i>→</i></button>
+          <button class="language-card italian" data-language="italian"><span class="flag"><img src="flags/it.svg" alt="Bandera de Italia" /></span><span><b>Italiano</b><small>Obiettivo — Raggiungere il livello B1</small></span><i>→</i></button>
+          <button class="language-card french" data-language="french"><span class="flag"><img src="flags/fr.svg" alt="Bandera de Francia" /></span><span><b>Français</b><small>Objectif — Atteindre le niveau A2</small></span><i>→</i></button>
+          <button class="language-card duolingo" id="duolingoButton"><span class="flag">🦉</span><span><b>Duolingo</b><small>Práctica transversal</small></span><i>→</i></button>
+          <button class="language-card today" id="todayButton"><span class="flag">⭐</span><span><b>¿Qué hago hoy?</b><small>Una sesión corta y útil</small></span><i>→</i></button>
+        </div>
+        <p class="hint">Consejo: instala esta página desde el navegador para tenerla como una app en Windows o Android.</p>
+      </section>
+
+      <section id="languageView" class="view" aria-live="polite">
+        <button class="back" id="backButton">← Inicio</button>
+        <div class="language-heading"><span id="languageFlag">🇬🇧</span><div><p class="eyebrow">LANGUAGE SPACE</p><h1 id="languageTitle">English</h1></div></div>
+        <div id="quickActions" class="quick-actions"></div>
+        <h2>Elige cómo quieres practicar</h2>
+        <div id="categoryGrid" class="category-grid"></div>
+        <section id="resourcesSection" class="resources" hidden>
+          <div class="section-heading"><div><p class="eyebrow">RECURSOS</p><h2 id="resourcesTitle">Recursos</h2></div><button class="close-resources" id="closeResources">×</button></div>
+          <div id="resourceList" class="resource-list"></div>
+        </section>
+      </section>
+    </main>
+
+    <dialog id="outlookDialog">
+      <form method="dialog" class="dialog-card">
+        <button class="dialog-close" value="cancel" aria-label="Cerrar">×</button>
+        <span class="dialog-icon">✉️</span>
+        <h2>Newsletters en inglés</h2>
+        <p id="outlookDescription">Introduce las direcciones de los remitentes que quieres ver. Quedarán guardadas solo en este dispositivo.</p>
+        <label for="senderInput">Un correo por línea</label>
+        <textarea id="senderInput" rows="6" placeholder="newsletter@ejemplo.com&#10;news@ejemplo.org"></textarea>
+        <p class="query-preview">Se abrirá Outlook para <b>davidpardoreina@hotmail.com</b> con esta búsqueda:<br /><code id="queryPreview">from:...</code></p>
+        <div class="dialog-actions"><button value="cancel" class="secondary">Ahora no</button><button type="button" id="openOutlook">Abrir Outlook</button></div>
+      </form>
+    </dialog>
+    <script src="app.js"></script>
+  </body>
+</html>
