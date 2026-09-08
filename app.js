@@ -47,11 +47,14 @@ function showResources(category) {
 }
 function showSpeakUp() {
   const android = /Android/i.test(navigator.userAgent);
+
   if (android) {
     const fallback = encodeURIComponent('https://www.speakup.es/app');
-    window.location.href = `intent://open/#Intent;scheme=speakup;package=es.rba.speakup;S.browser_fallback_url=${fallback};end`;
+    window.location.href =
+      `intent://open/#Intent;package=es.rba.speakup;S.browser_fallback_url=${fallback};end`;
     return;
   }
+
   openLink('https://www.speakup.es/app');
 }
 function showDuolingo() {
