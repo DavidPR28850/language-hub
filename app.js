@@ -3,7 +3,6 @@ const resources = {
     title: 'English', flag: 'gb',
     quick: [
       { label: '☁️ Mi carpeta de OneDrive', url: 'https://1drv.ms/f/c/685f78fc014b807e/IgD8W1kqTLq1Ram3CMjSqBNLAcA2Js6H5pbhaR8Ks3un7Ak?e=1550ny' },
-      { label: '✉️ Newsletters en inglés', action: 'outlookEnglish' }
     ],
     categories: {
       Listening: [{ name: 'BBC Learning English — Skills', url: 'https://www.bbc.co.uk/learningenglish/english/skills', note: 'Listening y otras destrezas', icon: '🎧' }, { name: 'Teledirecto — Reino Unido', url: 'https://www.teledirecto.es/country/3/', note: 'Televisión británica en directo', icon: '📺' }],
@@ -31,7 +30,7 @@ function showLanguage(key) {
   activeLanguage = key; const lang = resources[key];
   document.querySelector('#languageFlag').innerHTML = `<img src="flags/${lang.flag}.svg" alt="Bandera de ${lang.title}" />`; document.querySelector('#languageTitle').textContent = lang.title;
   const actions = document.querySelector('#quickActions'); actions.innerHTML = '';
-  if (key === 'english') { const news = document.createElement('button'); news.textContent = '📰 ENGLISH NEWS — Newsletters & actualidad'; news.onclick = () => openOutlookDialog('english'); actions.append(news); }
+  if (key === 'english') { const news = document.createElement('button'); news.textContent = '📰 ENGLISH NEWS — Newsletters & actualidad'; news.onclick = () => openLink('https://www.speakup.es/news'); actions.append(news); }
   lang.quick.forEach(item => { const button = document.createElement('button'); button.textContent = item.label; button.onclick = () => item.action === 'outlookEnglish' ? openOutlookDialog('english') : item.action === 'outlookItalian' ? openOutlookDialog('italian') : item.action === 'speakup' ? showSpeakUp() : item.action === 'onedrivePending' ? showOneDrivePending() : openLink(item.url); actions.append(button); });
   const grid = document.querySelector('#categoryGrid'); grid.innerHTML = '';
   Object.entries(categoryMeta[key]).forEach(([name,[icon,description]]) => { const card = document.createElement('button'); card.className='category'; card.innerHTML=`<span>${icon}</span><b>${name}</b><small>${description}</small>`; card.onclick=()=>showResources(name); grid.append(card); });
