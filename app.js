@@ -87,7 +87,7 @@ const resources = {
 const categoryMeta = {
   english: { Listening:['🎧','Listening'], Reading:['📖','Reading'], Speaking:['🗣️','Speaking'], Grammar:['✍️','Grammar'], Vocabulary:['🧠','Vocabulary'], Fun:['🎬','Fun'], 'YouTube Channels':['▶️','YouTube'], 'SPEAK UP':['📖','Revista RBA'] },
   italian: { Ascolto:['🎧','Ascolto'], Lettura:['📖','Lettura'], Conversazione:['🗣️','Conversazione'], Grammatica:['✍️','Grammatica'], Vocabolario:['🧠','Vocabolario'], 'Tempo libero':['🎬','Tempo libero'], 'Canali YouTube':['▶️','YouTube'], Notizie:['🗞️','Notizie'], 'Campus Torrejón':['🎓','Campus'] },
-  french: { 'Écoute':['🎧','Écoute'], Lecture:['📖','Lecture'], 'Expression orale':['🗣️','Expression orale'], Grammaire:['✍️','Grammaire'], Vocabulaire:['🧠','Vocabulaire'], Loisirs:['🎬','Loisirs'], 'Chaînes YouTube':['▶️','YouTube'], Actualités:['🗞️','Actualités'] }
+  french: { 'Écoute':['🎧','Écoute'], Lecture:['📖','Lecture'], 'Expression orale':['🗣️','Expression orale'], Grammaire:['✍️','Grammaire'],'Prononciation':['🔊','Prononciation'],  Vocabulaire:['🧠','Vocabulaire'], Loisirs:['🎬','Loisirs'], 'Chaînes YouTube':['▶️','YouTube'], Actualités:['🗞️','Actualités'] }
 };
 const homeView = document.querySelector('#homeView'), languageView = document.querySelector('#languageView');
 let activeLanguage = 'english', deferredPrompt;
