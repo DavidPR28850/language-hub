@@ -40,7 +40,7 @@ function openLink(url) {
   a.target = '_blank';
   a.rel = 'noopener noreferrer';
   a.click();
-} }
+}
 function showLanguage(key) {
   activeLanguage = key; const lang = resources[key];
   document.querySelector('#languageFlag').innerHTML = `<img src="flags/${lang.flag}.svg" alt="Bandera de ${lang.title}" />`; document.querySelector('#languageTitle').textContent = lang.title;
