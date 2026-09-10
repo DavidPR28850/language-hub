@@ -22,72 +22,15 @@ const resources = {
   { name:'Anni 80', url:'https://open.spotify.com/playlist/37i9dQZF1DX3kkOVvCOkIe?si=a8hU_KjsRLiQUbWyX9WUFg&utm_source=copy-link', note:'Musica italiana degli anni 80', icon:'🎵' },
   { name:'Canzoni italiane da cantare', url:'https://open.spotify.com/playlist/37i9dQZF1DX7gGbVYiYw1L?si=GMyCTzlKSbKOWEIWW8VhhA&utm_source=copy-link', note:'Canzoni italiane', icon:'🎵' }
 ],'Canali YouTube': [{ name:'@lucreziaoddone', url:'https://www.youtube.com/@lucreziaoddone', note:'Canale YouTube', icon:'▶️' }, { name:'@italianoautomatico', url:'https://www.youtube.com/@italianoautomatico', note:'Canale YouTube', icon:'▶️' }, { name:'@Italianeando', url:'https://www.youtube.com/@Italianeando', note:'Canale YouTube', icon:'▶️' }], Notizie:[{ name:'Easy Italian News', url:'https://easyitaliannews.com/', note:'Notizie in italiano', icon:'🗞️' }], 'Campus Torrejón':[{ name:'Campus Torrejón', url:'https://campustorrejon.formacampus.com/IndexIF.aspx', note:'Plataforma de formación', icon:'🎓' }] } },
-  french: { 
-  title:'Français', 
-  flag:'fr', 
-  quick:[
-    { label:'☁️ Mon dossier OneDrive', url:'https://onedrive.live.com/my?id=%2Fpersonal%2F685f78fc014b807e%2FDocuments%2FIDIOMAS%2FFRANC%C3%89S&viewid=9152b10a%2Da9bc%2D41e4%2Da1a7%2D421135efde51' }
-  ], 
-  categories:{ 
-
-    'Écoute':[
-      { name:'TV5MONDE — Compréhension orale', url:'https://apprendre.tv5monde.com/fr/exercices', note:'Vidéos et exercices par niveau', icon:'🎧' },
-      { name:'RFI — Français facile', url:'https://francaisfacile.rfi.fr/fr/', note:'Écoute du français authentique', icon:'🎧' },
-      { name:'InnerFrench', url:'https://innerfrench.com/podcast/', note:'Podcast pour apprenants', icon:'🎧' }
-    ],
-
-    Lecture:[
-      { name:'Lingua.com — Lecture', url:'https://lingua.com/francais/lecture/', note:'Exercices de lecture en français', icon:'📖' },
-      { name:'1jour1actu', url:'https://www.1jour1actu.com/', note:'Actualités adaptées aux jeunes lecteurs', icon:'📰' }
-    ],
-
-    'Expression orale':[
-      { name:'Français avec Pierre', url:'https://www.francaisavecpierre.com/', note:'Français et expression orale', icon:'🗣️' },
-      { name:'Easy French', url:'https://www.easy-languages.org/easy-french', note:'Français parlé dans la rue', icon:'🗣️' }
-    ],
-
-    'Prononciation':[
-      { name:'TV5MONDE — Prononciation', url:'https://apprendre.tv5monde.com/fr/aides/prononciation', note:'Prononciation et phonétique', icon:'🔊' },
-      { name:'Forvo — Français', url:'https://forvo.com/languages/fr/', note:'Prononciation par locuteurs natifs', icon:'🔊' },
-      { name:'Lawless French — Pronunciation', url:'https://www.lawlessfrench.com/pronunciation/', note:'Prononciation et phonétique', icon:'🔊' }
-    ],
-
-    Grammaire:[
-      { name:'TV5MONDE — Grammaire', url:'https://apprendre.tv5monde.com/fr/aides/grammaire', note:'Grammaire française', icon:'✍️' },
-      { name:'Lawless French — Grammaire', url:'https://www.lawlessfrench.com/grammar/', note:'Explications et exercices', icon:'✍️' },
-      { name:'Lingolia — Grammaire française', url:'https://francais.lingolia.com/fr/grammaire', note:'Grammaire avec exercices', icon:'✍️' }
-    ],
-
-    Vocabulaire:[
-      { name:'TV5MONDE — Vocabulaire', url:'https://apprendre.tv5monde.com/fr/aides/vocabulaire', note:'Vocabulaire français', icon:'🧠' },
-      { name:'LanguageGuide — Vocabulaire français', url:'https://www.languageguide.org/french/vocabulary/', note:'Vocabulaire avec audio', icon:'🧠' },
-      { name:'Lawless French — Vocabulaire', url:'https://www.lawlessfrench.com/vocabulary/', note:'Vocabulaire par temas', icon:'🧠' }
-    ],
-
-    'Loisirs':[
-      { name:'Francia', url:'https://open.spotify.com/playlist/3YIqHmmR6HKLCWyDlXZFfV?si=H9nKeprpQaKe_7IIN4uDEw&utm_source=copy-link', note:'Musique française', icon:'🎵' },
-      { name:'Carrousel', url:'https://open.spotify.com/playlist/1PkHXYbzyXth3Dkho8mOv2?si=mot0gO-aSke7941z7jEraQ&utm_source=copy-link', note:'Musique française', icon:'🎵' }
-    ],
-
-    'Chaînes YouTube':[
-      { name:'@OhlàlàGinetteAprendefrancéscon', url:'https://www.youtube.com/@Ohl%C3%A0l%C3%A0GinetteAprendefranc%C3%A9scon', note:'Chaîne YouTube', icon:'▶️' },
-      { name:'@clasesfrancesfacil', url:'https://www.youtube.com/@clasesfrancesfacil', note:'Chaîne YouTube', icon:'▶️' },
-      { name:'Easy French', url:'https://www.youtube.com/@EasyFrench', note:'Français parlé dans la rue', icon:'▶️' },
-      { name:'Français avec Pierre', url:'https://www.youtube.com/@FrancaisAvecPierre', note:'Cours et conseils de français', icon:'▶️' },
-      { name:'InnerFrench', url:'https://www.youtube.com/@innerFrench', note:'Français pour niveau intermédiaire', icon:'▶️' }
-    ],
-
-    Actualités:[
-      { name:'RFI — Journal en français facile', url:'https://francaisfacile.rfi.fr/es/podcasts/journal-en-fran%C3%A7ais-facile/', note:'Actualités en français facile', icon:'🗞️' },
-      { name:'TV5MONDE — Actualités', url:'https://information.tv5monde.com/', note:'Actualités en français', icon:'🗞️' }
-    ]
-
-  } 
-}
+  french: { title:'Français', flag:'fr', quick:[{ label:'☁️ Mon dossier OneDrive', url:'https://onedrive.live.com/my?id=%2Fpersonal%2F685f78fc014b807e%2FDocuments%2FIDIOMAS%2FFRANC%C3%89S&viewid=9152b10a%2Da9bc%2D41e4%2Da1a7%2D421135efde51' }], categories:{ Grammaire:[{ name:'TV5MONDE — Exercices A1 débutant', url:'https://apprendre.tv5monde.com/fr/exercices/a1-debutant', note:'Exercices de français', icon:'📺' }], 'Loisirs':[
+  { name:'Francia', url:'https://open.spotify.com/playlist/3YIqHmmR6HKLCWyDlXZFfV?si=H9nKeprpQaKe_7IIN4uDEw&utm_source=copy-link', note:'Musique française', icon:'🎵' },
+  { name:'Carrousel', url:'https://open.spotify.com/playlist/1PkHXYbzyXth3Dkho8mOv2?si=mot0gO-aSke7941z7jEraQ&utm_source=copy-link', note:'Musique française', icon:'🎵' }
+], 'Chaînes YouTube': [{ name:'@OhlàlàGinetteAprendefrancéscon', url:'https://www.youtube.com/@Ohl%C3%A0l%C3%A0GinetteAprendefranc%C3%A9scon', note:'Chaîne YouTube', icon:'▶️' }, { name:'@clasesfrancesfacil', url:'https://www.youtube.com/@clasesfrancesfacil', note:'Chaîne YouTube', icon:'▶️' }], Actualités:[{ name:'RFI — Journal en français facile', url:'https://francaisfacile.rfi.fr/es/podcasts/journal-en-fran%C3%A7ais-facile/', note:'Actualités en français facile', icon:'🗞️' }] } }
+};
 const categoryMeta = {
   english: { Listening:['🎧','Listening'], Reading:['📖','Reading'], Speaking:['🗣️','Speaking'], Grammar:['✍️','Grammar'], Vocabulary:['🧠','Vocabulary'], Fun:['🎬','Fun'], 'YouTube Channels':['▶️','YouTube'], 'SPEAK UP':['📖','Revista RBA'] },
   italian: { Ascolto:['🎧','Ascolto'], Lettura:['📖','Lettura'], Conversazione:['🗣️','Conversazione'], Grammatica:['✍️','Grammatica'], Vocabolario:['🧠','Vocabolario'], 'Tempo libero':['🎬','Tempo libero'], 'Canali YouTube':['▶️','YouTube'], Notizie:['🗞️','Notizie'], 'Campus Torrejón':['🎓','Campus'] },
-  french: { 'Écoute':['🎧','Écoute'], Lecture:['📖','Lecture'], 'Expression orale':['🗣️','Expression orale'], Grammaire:['✍️','Grammaire'],'Prononciation':['🔊','Prononciation'],  Vocabulaire:['🧠','Vocabulaire'], Loisirs:['🎬','Loisirs'], 'Chaînes YouTube':['▶️','YouTube'], Actualités:['🗞️','Actualités'] }
+  french: { 'Écoute':['🎧','Écoute'], Lecture:['📖','Lecture'], 'Expression orale':['🗣️','Expression orale'], Grammaire:['✍️','Grammaire'], Vocabulaire:['🧠','Vocabulaire'], Loisirs:['🎬','Loisirs'], 'Chaînes YouTube':['▶️','YouTube'], Actualités:['🗞️','Actualités'] }
 };
 const homeView = document.querySelector('#homeView'), languageView = document.querySelector('#languageView');
 let activeLanguage = 'english', deferredPrompt;
